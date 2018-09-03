@@ -25,6 +25,8 @@ app.use(require('express-session')({
   saveUninitialized: true
 }));
 
+console.log("Hello")
+
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -123,4 +125,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
